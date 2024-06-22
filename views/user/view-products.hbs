@@ -1,0 +1,40 @@
+
+<section>
+    
+
+        
+        <div class="container mt-5">
+          <div class="float-right pr-5">
+            
+        {{#if user}}
+        <a class="nav-link btn btn-danger" href="/cart"><span><i class="fas fa-shopping-cart"></i></span> Cart<span class="badge badge-success ml-1" id="cart-count">{{cartCount}}</span></a>
+        {{else}}
+        <a class="nav-link btn btn-danger" href="/login"><span><i class="fas fa-shopping-cart"></i></span> Cart<span class="badge badge-success ml-1" id="cart-count">{{cartCount}}</span></a>
+        {{/if}}
+      
+          
+        </div>
+          <h1 style="
+    letter-spacing: -4px;
+    color: #6fb374;
+  ">Medicines</h1>
+        <div class="row">
+            {{#each products}}
+            <div class="col-md-5 p-3">
+                <div class="card" style="width: 30rem; height:30rem ">
+  
+  <div class="card-body" style="background-color:#EADDCA" >
+    <h5 class="card-title" style="color:black">{{this.Name}}</h5>
+    <p class="card-text">Rs.{{this.Price}}</p>
+    <p class="card-text">{{this.Category}}</p>
+    
+    <button onclick="addToCart('{{this._id}}')"class="btn btn-primary" >Add to cart</button>
+  </div>
+</div>
+
+            </div>
+            {{/each}}
+        </div>
+        </div>
+    
+    </section>

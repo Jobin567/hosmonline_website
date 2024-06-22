@@ -1,0 +1,31 @@
+<section>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="public/css/font-awesome.min.css">
+     <link rel="stylesheet" href="public/css/animate.css">
+     <link rel="stylesheet" href="public/css/owl.carousel.css">
+     <link rel="stylesheet" href="public/css/owl.theme.default.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="public/css/tooplate-style.css">
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-center">Add Doctors</h2>
+                <form action="/admin/add-appointment"method="POST" enctype="multipart/form-data">
+                    <label for="">Name</label>
+                    <input type="text" name="Name" class="form-control">
+                    <label for="">Department</label>
+                    <input type="text" name="Category" class="form-control">
+                    <label for="">Qualification</label>
+                    <input type="text" name="Price" class="form-control">
+                    <label for="">Consultant Day</label>
+                    <input type="text" name="Description" class="form-control">
+                    <label for="">Image</label>
+                    <input type="file"  class="form-control" name="Image">
+                    <button type="submit" class="btn btn-success mt-4">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

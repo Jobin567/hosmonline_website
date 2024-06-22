@@ -1,0 +1,32 @@
+<section>
+    
+        <table class="table mt-5 " id="labstable">
+  <thead>
+    <tr>
+      
+      <th scope="col">Lab Report Number</th>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">Images</th>
+      <th scope="col">Options</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each labs}}
+    <tr>
+      
+      <td>{{this.Name}}</td>
+      <td>{{this.Category}}</td>
+      <td>{{this.Price}}</td>
+       <td><img  style="width:50px;height:50px;"src="/lab-images/{{this._id}}.jpg"alt=""></td>
+      <td>
+        <a href="/lab-images/{{this._id}}.jpg"class="btn btn-primary">Report</a>
+        
+        </td>
+    </tr>
+    {{/each}}
+    <script>
+      $(document).ready( function () {
+    $('#labstable').DataTable();
+} );
+    </script>

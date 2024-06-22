@@ -1,0 +1,74 @@
+ <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="public/css/font-awesome.min.css">
+     <link rel="stylesheet" href="public/css/animate.css">
+     <link rel="stylesheet" href="public/css/owl.carousel.css">
+     <link rel="stylesheet" href="public/css/owl.theme.default.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="public/css/tooplate-style.css">
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+               
+          </div>
+     </section>
+  <header>
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-5">
+                         <p>Welcome to Hospoline Health Care</p>
+                    </div>
+                         
+                    <div class="col-md-8 col-sm-7 text-align-right">
+                         <span class="phone-icon"><i class="fa fa-phone"></i> 04884-288279</span>
+                         <span class="date-icon"><i class="fa fa-calendar-plus-o"></i> 6:00 AM - 10:00 PM (Mon-Fri)</span>
+                         <span class="email-icon"><i class="fa fa-envelope-o"></i> <a href="#">hospoline@gmail.com</a></span>
+                    </div>
+
+               </div>
+          </div>
+     </header>
+
+
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid "  >
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Hospoline Health Care Centre</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/developer">Developers</a></li>
+      <li><a href="https://mediafiles.botpress.cloud/36454121-eebc-4a9d-822c-1f0ca92fb5a6/webchat/bot.html">Chat Bot</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <button class="btn btn-info dropdown-toggle userDropdown fadeIn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    {{#if user}}
+    <i class="fas fa-user"></i>
+      {{user.Name}}
+      {{else}}
+      <i class="fas fa-user-alt-slash"></i>
+       Account
+    {{/if}}
+ 
+  </button>
+  <div class="dropdown-menu userDropdown fadeIn navigationDrop" aria-labelledby="dropdownMenuButton">
+     {{#if user}}
+      <a class="dropdown-item userDropdown" href="/logout">LogOut<span style="position: relative;left:10px"><i class="fas fa-sign-out-alt"></i></span></a>
+      {{else}}
+      <a class="dropdown-item userDropdown loginButton" href="/login"><span><i class="fas fa-sign-in-alt"></i></span> LogIn</a>
+    {{/if}}
+    
+  
+  </div>
+</div>
+     
+    </ul>
+  </div>
+</nav>
+  

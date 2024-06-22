@@ -1,0 +1,109 @@
+<section>
+    
+        <table class="table mt-5">
+  <thead>
+    <tr>
+      <th scope="col">No</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Description</th>
+      
+    </tr>
+  </thead>
+  <tbody style="">
+    {{#each products}}
+    <tr>
+      <th scope="row">1</th>
+      <td>{{this.Name}}</td>
+      <td>{{this.Price}}</td>
+      <td>{{this.Category}}</td>
+      
+      <td>
+        
+        <a href="/admin/delete-product/{{this._id}}"class="btn btn-danger"onclick=" return confirm('Are you want to delete {{this.Name}} ?')">Delete</a>
+        </td>
+    </tr>
+    {{/each}}
+    {{#each cardiologys}}
+    <tr>
+      <th scope="row">1</th>
+      <td>{{this.Name}}</td>
+      <td>{{this.Category}}</td>
+      <td>{{this.Description}}</td>
+      <td><img  style="width:50px;height:50px;"src="/cardiology-images/{{this._id}}.jpg"alt=""></td>
+      <td>
+        <a href="/admin/edit-cardiology/{{this._id}}"class="btn btn-primary">Edit</a>
+        <a href="/admin/delete-cardiology/{{this._id}}"class="btn btn-danger"onclick=" return confirm('Are you want to delete {{this.Name}} ?')">Delete</a>
+        </td>
+    </tr>
+    {{/each}}
+    {{#each dermatologys}}
+    <tr>
+      <th scope="row">1</th>
+      <td>{{this.Name}}</td>
+      <td>{{this.Category}}</td>
+      <td>{{this.Description}}</td>
+      <td><img  style="width:50px;height:50px;"src="/dermatology-images/{{this._id}}.jpg"alt=""></td>
+      <td>
+        <a href="/admin/edit-dermatology/{{this._id}}"class="btn btn-primary">Edit</a>
+        <a href="/admin/delete-dermatology/{{this._id}}"class="btn btn-danger"onclick=" return confirm('Are you want to delete {{this.Name}} ?')">Delete</a>
+        </td>
+    </tr>
+    {{/each}}
+    {{#each neurologys}}
+    <tr>
+      <th scope="row">1</th>
+      <td>{{this.Name}}</td>
+      <td>{{this.Category}}</td>
+      <td>{{this.Description}}</td>
+      <td><img  style="width:50px;height:50px;"src="/neurology-images/{{this._id}}.jpg"alt=""></td>
+      <td>
+        <a href="/admin/edit-neurology/{{this._id}}"class="btn btn-primary">Edit</a>
+        <a href="/admin/delete-neurology/{{this._id}}"class="btn btn-danger"onclick=" return confirm('Are you want to delete {{this.Name}} ?')">Delete</a>
+        </td>
+    </tr>
+    {{/each}}
+    {{#each nephrologys}}
+    <tr>
+      <th scope="row">1</th>
+      <td>{{this.Name}}</td>
+      <td>{{this.Category}}</td>
+      <td>{{this.Description}}</td>
+      <td><img  style="width:50px;height:50px;"src="/nephrology-images/{{this._id}}.jpg"alt=""></td>
+      <td>
+        <a href="/admin/edit-nephrology/{{this._id}}"class="btn btn-primary">Edit</a>
+        <a href="/admin/delete-nephrology/{{this._id}}"class="btn btn-danger"onclick=" return confirm('Are you want to delete {{this.Name}} ?')">Delete</a>
+        </td>
+    </tr>
+    {{/each}}
+    {{#each obsestrics}}
+    <tr>
+      <th scope="row">1</th>
+      <td>{{this.Name}}</td>
+      <td>{{this.Category}}</td>
+      <td>{{this.Description}}</td>
+      <td><img  style="width:50px;height:50px;"src="/obsestric-images/{{this._id}}.jpg"alt=""></td>
+      <td>
+        <a href="/admin/edit-obsestric/{{this._id}}"class="btn btn-primary">Edit</a>
+        <a href="/admin/delete-obsestric/{{this._id}}"class="btn btn-danger"onclick=" return confirm('Are you want to delete {{this.Name}} ?')">Delete</a>
+        </td>
+    </tr>
+    {{/each}}
+    {{#each ops}}
+    <tr>
+      <th scope="row">1</th>
+      <td>{{this.Name}}</td>
+      <td>{{this.Category}}</td>
+      <td>{{this.Description}}</td>
+      <td><img  style="width:50px;height:50px;"src="/op-images/{{this._id}}.jpg"alt=""></td>
+      <td>
+        <a href="/admin/edit-op/{{this._id}}"class="btn btn-primary">Edit</a>
+        <a href="/admin/delete-op/{{this._id}}"class="btn btn-danger"onclick=" return confirm('Are you want to delete {{this.Name}} ?')">Delete</a>
+        </td>
+    </tr>
+    {{/each}}
+    
+  </tbody>
+</table>
+    </div>
+</section>
