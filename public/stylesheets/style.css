@@ -1,0 +1,45 @@
+.cartButton:hover{
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.userDropdown:hover{
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.deKart{
+    font-family: 'Anton', sans-serif;
+}
+
+
+
+.logoutButton:hover{
+    background-color: #d9534f;
+}
+
+
+
+.headerText{
+    color: #fff;
+}
+
+.tableHead{
+    background-color: #0275d8 ;
+    color: #fff;
+    text-align: center;
+    ;
+}
+
+.table{
+    
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+}
+
+.navbar{
+    position:fixed;
+    width:100%;
+    z-index: 1000000;
+    top:0;
+}
